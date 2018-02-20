@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="pl-PL">
 
 <head>
   <meta charset="utf-8">
@@ -7,40 +7,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daniel Ogonowski- portfolio</title>
   <meta name="description" content="Poznajmy się. W tym miejscu opowiem Ci kilka słów o sobie.">
-  <meta name="keywords" content="strona www, js, html, css, programowanie">
+  <meta name="keywords" content="strona www, js, html, css, programowanie, danielogonowski, daniel ogonowski, Daniel Ogonowski, danielogonowski.pl">
+  <meta name="author" content="Daniel Ogonowski">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Amatic+SC:400,700|Open+Sans:400,700|Raleway:400,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 
 <body>
-
-  <header class="page-hr page-hr--opened">
-    <a class="page-hr__logo" href="#" title="Strona główna">Daniel Ogonowski</a>
-    <nav>
-      <ul>
-        <li><a href="#" title="Przejdź do sekcji o autorze">O mnie</a></li>
-        <li><a href="#" tite="Przejdz do sekcji o umiejętnościach autora">Umiejętności</a></li>
-        <li><a href="#" title="Przejdz do sekcji projektów">Projekty</a></li>
-        <li><a href="#" title="Przejdz do sekcji kontaktów">Kontakt</a></li>
-      </ul>
-    </nav>
-    <button type="page-hr-btn">Przycisk</button>
+  <header class="page-hdr">
+    <div class="page-hdr__up">
+      <div class="page-hdr__logo">Daniel Ogonowski</div>
+      <button class="page-hdr__hmb">
+        <span class="hmb__tile1"></span>
+        <span class="hmb__tile2"></span>
+        <span class="hmb__tile3"></span>
+      </button>
+    </div>
+    <div class="page-hdr__down">
+      <nav class="page-hdr__nav">
+        <ul>
+          <li><a class="nav__option nav__aboutme" href="#" title="Przejdź do sekcji o autorze">O mnie</a></li>
+          <li><a class="nav__option nav__skills" href="#" title="Przejdź do sekcji kontaktów">Umiejętności</a></li>
+          <li><a class="nav__option nav__projects" href="#" title="Przejdź do sekcji projektów">Projekty</a></li>
+          <li><a class="nav__option nav__contact" href="#" title="Przejdź do sekcji kontaktów">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <article class="container">
-      <section class="aboutme">
+    <article class="content">
+      <header class="content__hdr">
+        <h1>Witaj<span class="red">!</span></h1>
+        <h2>Jestem Daniel, a to jest moje portfolio<span class="red">...</span></h2>
+      </header>
+      <div class="content__quotation">
+        <div class="quote">
+          <p><i>"Programmers are in a race with the Universe to create bigger and better idiot-proof programs, while the Universe is trying to create bigger and better idiots. So far the Universe is winning.” :) </i> <br/>-Rich Cook</p>
+        </div>
+      </div>
+      <section class="content__aboutme">
+        <h3><span class="fa fa-user" aria-hidden="true"></span>O mnie</h3>
+        <div class="aboutme__container">
+          <figure class="aboutme__frame">
+            <img class="aboutme__img" src="img/me.png" alt="Zdjęcie przedstawia wizerunek autora strony, Daniela Ogonowskiego" />
+          </figure>
+          <div class="aboutme__text">Cześć! Nazywam się Daniel Ogonowski i jestem początkującym frontendowcem. Intensywnie uczę się front-endu od początku 2017 roku. Każdego dnia nabieram większej wprawy i doświadczenia, co można ocenić, przeglądając moje portfolio. Obecnie szukam stażu/praktyk/pracy na stanowisku Junior Web Developera. Jeśli podobają Ci się moje projekty i chcesz nawiązać współpracę - skontaktuj się ze mną bez wahania.</div>
+        </div>
       </section>
 
-      <section class="skills">
+      <section class="content__skills">
+        <h3><span class="fa fa-laptop" aria-hidden="true"></span>Umiejętności</h3>
+        <div class="skills__container">
+          <figure class="skill__frame">
+            <img class="skill__img" src="img/logo_html.png" alt="Zdjęcie przedstawia logo html" />
+            <figcaption class="skill__text skill__text-left">Tworzę strony w oparciu o najnowsze technologie <span class="red">HTML5</span>, wykorzystując znaczniki semantyczne. Priorytetem jest dla mnie przejrzystość zarówno kodu, jak i samego layoutu. </figcaption>
+          </figure>
+          <figure class="skill__frame">
+            <img class="skill__img" src="img/logo_css.png" alt="Zdjęcie przedstawia logo css" />
+            <figcaption class="skill__text skill__text-mid">Istotne jest dla mnie aby strona tworzyła spójną kompozycję. W tym celu skrupulatnie zgłębiam możliwości <span class="red">CSS3</span>. Stosuję takie metodyki CSS jak OOCSS oraz BEM. Responsywność strony ma w dzisiejszych czasach niebagatelne znaczenie, dlatego wyznaję zasadę- mobile first!</figcaption>
+          </figure>
+          <figure class="skill__frame">
+            <img class="skill__img" src="img/logo_js.png" alt="Zdjęcie przedstawia logo js" />
+            <figcaption class="skill__text skill__text-right">Przygodę z <span class="red">JavaScriptem</span> rozpocząłem od tworzenia prostych animacji w bibliotece p5.js. Aktualnie uczę się ES5/ES6 oraz biblioteki jQuery. Planuję również przyjrzeć się bliżej takim frameworkom jak: React i Angular.</figcaption>
+          </figure>
+        </div>
       </section>
 
-      <section class="projects">
+      <section class="content__projects">
+        <h3><span class="fa fa-briefcase" aria-hidden="true"></span>Projekty</h3>
+        <div class="projects__container">
+          <div class="project__frame">
+            <img class="project__img" src="img/website-first-red.png" alt="Zdjęcie przedstawia projekt pierwszej strony internetowej autora" />
+            <a class="link-web" href="http://danielogonowski.pl/first-portfolio" target="_blank" title="Przejdź na moją pierwszą stronę umieszczoną na domenie dogon.ayz.pl"><span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+          </div>
+          <div class="project__frame">
+            <img class="project__img" src="img/space-red.png" alt="Zdjęcie przedstawia projekt starfield, wykorzystujący bibliotekę p5.js" />
+            <a class="link-star" href="https://embed.plnkr.co/T7wMvu/" target="_blank" title="Przejdź na projekt starfielda umieszczony na plunkerze"><span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+          </div>
+          <div class="project__frame">
+            <img class="project__img" src="img/gen-red.png" alt="Zdjęcie przedstawia projekt smart rockets, wykorzystujący bibliotekę p5.js" />
+            <a class="link-gen" href="https://embed.plnkr.co/QAU2Lh/" target="_blank" title="Przejdź na projekt smart rockets umieszczony na plunkerze"><span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span></a>
+          </div>
+        </div>
       </section>
 
-      <section class="contact">
+      <section class="content__contact">
+        <h3><span class="fa fa-mobile" aria-hidden="true"></span>Kontakt</h3>
+        <div class="contact__container">
+          <div class="contact__info">
+            <p>Dane kontaktowe:</p>
+            <p><span class="fa fa-phone" aria-hidden="true"></span>515 370 606</p>
+            <p><span class="fa fa-envelope" aria-hidden="true"></span><a>daniel.ogonowski@gmail.com</a></p>
+          </div>
+          <div class="contact__links">
+            <div class="contact__socials">
+              <a class="fb" href="https://www.facebook.com/daniel.ogonowski.3" target="_blank" title="Przejdż na mój profil na Facebooku"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="tw" href="https://twitter.com/d_ogonowski" target="_blank" title="Przejdż na mój profil na Twitterze"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a class="gplus" href="https://plus.google.com/106978902880014025473" target="_blank" title="Przejdż na mój profil na Google+"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </div>
+            <div class="contact__code-links">
+              <a class="git" href="https://github.com/Danogo" target="_blank" title="Przejdż na mój profil na GitHubie"><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a class="plunker" href="https://plnkr.co/users/Danogo" target="_blank" title="Przejdż na mój profil na Plunkerze"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+              <a class="codepen" href="https://codepen.io/danogo/" target="_blank" title="Przejdż na mój profil na Codepenie"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
       </section>
     </article>
   </main>
-  <footer></footer>
+  <footer class="footer">
+    <p>2017 Daniel Ogonowski &copy;</p>
+    <p>Wszystkie prawa zastrzeżone.</p>
+  </footer>
+  <a class="scrollup" href="#"></a>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
