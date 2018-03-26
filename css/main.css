@@ -282,7 +282,8 @@ h1, h2, h3 {
   background: #ECF0F1;
   /*fallback*/
   background: linear-gradient(to bottom right, #FFFFFF, #ECF0F1);
-  background: url('../img/back.jpg') no-repeat center center;
+  /* background image is under Creative Common 0 (Zero) license : https://creativecommons.org/publicdomain/zero/1.0/legalcode*/
+  background: url('../img/bgrtransparent.png') no-repeat center center;
   background-attachment: fixed;
   padding-left: 2rem;
   padding-right: 2rem;
